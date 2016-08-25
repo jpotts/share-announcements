@@ -1,0 +1,8 @@
+<webscript>
+    <shortname>Announcements</shortname>
+    <description>Returns all current announcements</description>
+    <url>/metaversant/announcements</url>
+    <authentication>guest</authentication>
+    <format default="json"></format>
+    <family>metaversant</family>
+</webscript>
