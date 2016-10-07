@@ -27,11 +27,11 @@ function main() {
   for (var i = 0; i < results.length; i++) {
     if (results[i].mimetype != "text/plain") {
       continue;
-    }    
+    }
     anns.push({
       id: results[i].nodeRef.toString(),
       name: results[i].name,
-      content: escape(results[i].content)
+      content: results[i].content
     });
   }
   model.announcements = anns;

@@ -1,3 +1,4 @@
+<#escape x as jsonUtils.encodeJSONString(x)>
 [
   <#list announcements as ann>
     {
@@ -7,3 +8,4 @@
     }<#if ann_has_next>,</#if>
   </#list>
 ]
+</#escape>
