@@ -1,0 +1,6 @@
+<webscript>
+   <shortname>Announcements</shortname>
+   <description>Displays system announcements</description>
+   <family>dashlet</family>
+   <url>/components/metaversant/dashlets/announcements</url>
+</webscript>
