@@ -5,7 +5,7 @@
 <@markup id="change-password-link" target="form" action="before" scope="global" >
   <#if announcements?? && announcements?size gt 0>
     <div id="announcements">
-      <p>${msg("header.announcements")}:</p>
+      <h1>${msg("header.announcements")}:</h1>
       <ul>
         <#list announcements as ann>
           <li class="announcement">${ann.content}</li>
