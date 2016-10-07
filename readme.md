@@ -20,7 +20,7 @@ The add-on creates a new rest endpoint called `/alfresco/s/metaversant/announcem
       {
         id: "workspace://SpacesStore/5bcb3581-54d8-40da-b958-3399989f2d80",
         name: "fancy-announcement.txt",
-        content: "This%20announcement%20includes%20%3Cb%3Esome%20markup%3C/b%3E%20so%20it%20is%20considered%20to%20be%20a%20fancy%20announcement."
+        content: "This is a test \"announcement\" number 1."
       }
     }
 
@@ -28,7 +28,11 @@ Notice that the content property is escaped. This allows things like embedded qu
 
 ## Front-End
 
-TBD    
+The front-end is implemented using a Share module extension. The extension hooks into the Alfresco guest login component (which is how the login page is rendered) and injects new markup.
+
+The markup formats the announcements as an unordered list. The markup is produced using freemarker which can be found in a file called login.get.html.ftl. The data being styled is retrieved by the login.get.js controller which makes the remote call to the announcements endpoint described earlier.
+
+The injected markup also adds a new CSS resource, announcements.css. It contains a couple of simple classes that format the announcements list.     
 
 ## Testing Locally
 

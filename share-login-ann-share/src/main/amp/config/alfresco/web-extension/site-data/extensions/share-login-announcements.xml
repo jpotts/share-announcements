@@ -1,0 +1,18 @@
+<extension>
+  <modules>
+    <module>
+      <id>Share Login Announcements</id>
+      <version>1.0</version>
+      <auto-deploy>true</auto-deploy>
+      <customizations>
+        <customization>
+           <targetPackageRoot>org.alfresco.components.guest</targetPackageRoot>
+           <sourcePackageRoot>com.metaversant.components.guest.login</sourcePackageRoot>
+           <dependencies>
+             <css>/res/metaversant/css/announcements.css</css>
+           </dependencies>
+        </customization>
+      </customizations>
+    </module>
+  </modules>
+</extension>
