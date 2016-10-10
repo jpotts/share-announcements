@@ -4,7 +4,11 @@
   max-width: 500px
 }
 
+#announcements ul {
+  list-style-position: outside;
+  margin-left: 1em;
+}
+
 #announcements li {
   list-style-type: circle;
-  list-style-position: inside
 }

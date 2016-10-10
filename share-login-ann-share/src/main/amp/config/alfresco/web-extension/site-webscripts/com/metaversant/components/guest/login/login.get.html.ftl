@@ -6,7 +6,7 @@
   <#if announcements?? && announcements?size gt 0>
     <div id="announcements">
       <h1>${msg("header.announcements")}:</h1>
-      <ul>
+      <ul class="announcements">
         <#list announcements as ann>
           <li class="announcement">${ann.content}</li>
         </#list>
