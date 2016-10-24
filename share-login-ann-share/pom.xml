@@ -5,9 +5,33 @@
     <groupId>com.metaversant</groupId>
     <artifactId>share-login-ann-share</artifactId>
     <version>0.0.2-SNAPSHOT</version>
-    <name>share-login-ann-share AMP project</name>
     <packaging>amp</packaging>
+
+    <name>share-login-ann-share AMP project</name>
     <description>Manages the lifecycle of the share-login-ann-share AMP (Alfresco Module Package)</description>
+    <url>https://github.com/jpotts/share-announcements</url>
+
+    <licenses>
+      <license>
+        <name>The Apache License, Version 2.0</name>
+        <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      </license>
+    </licenses>
+
+    <developers>
+      <developer>
+        <name>Jeff Potts</name>
+        <email>info@metaversant.com</email>
+        <organization>Metaversant Group, Inc.</organization>
+        <organizationUrl>http://www.metaversant.com</organizationUrl>
+      </developer>
+    </developers>
+
+    <scm>
+      <connection>scm:git:git://github.com/jpotts/share-announcements.git</connection>
+      <developerConnection>scm:git:ssh://github.com:jpotts/share-announcements.git</developerConnection>
+      <url>http://github.com/jpotts/share-announcements/tree/master</url>
+    </scm>
 
     <parent>
         <groupId>org.alfresco.maven</groupId>
