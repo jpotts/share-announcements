@@ -34,6 +34,56 @@ The markup formats the announcements as an unordered list. The markup is produce
 
 The injected markup also adds a new CSS resource, announcements.css. It contains a couple of simple classes that format the announcements list.     
 
+## Maven
+Add the dependencies and overlays to the POM files of your WAR projects.
+
+For the repository tier, in a project created with the all-in-one archetype, edit repo/pom.xml:
+
+
+    <dependencies>
+      ...
+      <dependency>
+          <groupId>com.metaversant</groupId>
+          <artifactId>share-login-ann-repo</artifactId>
+          <version>0.0.2</version>
+          <type>amp</type>
+      </dependency>
+      ...
+    </dependencies>
+
+    <overlays>
+      ...
+      <overlay>
+          <groupId>com.metaversant</groupId>
+          <artifactId>share-login-ann-repo</artifactId>
+          <type>amp</type>
+      </overlay>
+      ...
+    </overlays>
+
+For the Share tier, in a project created with the all-in-one archetype, edit share/pom.xml:
+
+    <dependencies>
+      ...
+      <dependency>
+          <groupId>com.metaversant</groupId>
+          <artifactId>share-login-ann-share</artifactId>
+          <version>0.0.2</version>
+          <type>amp</type>
+      </dependency>
+      ...
+    </dependencies>
+
+    <overlays>
+      ...
+      <overlay>
+          <groupId>com.metaversant</groupId>
+          <artifactId>share-login-ann-share</artifactId>
+          <type>amp</type>
+      </overlay>
+      ...
+    </overlays>
+
 ## Testing Locally
 
 There are two projects in the repository, one is for the repo tier AMP and the other is for the Share tier AMP.
