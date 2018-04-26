@@ -2,3 +2,6 @@ share-login-ann-repo/alf_data_dev
 share-login-ann-repo/target
 share-login-ann-share/target
 target
+.idea
+alf_data_dev
+*.log
